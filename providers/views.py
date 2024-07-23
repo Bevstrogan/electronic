@@ -10,5 +10,5 @@ class ProviderViewSet(viewsets.ModelViewSet):
     queryset = Provider.objects.all()
     serializer_class = ProviderSerializer
     filter_backends = [filters.SearchFilter]
-    search_fields = ['country']
+    search_fields = ["country"]
     permission_classes = [IsAuthenticated, IsActiveUser]
